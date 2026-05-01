@@ -2,7 +2,16 @@
   "permissions": {
     "allow": [
       "Bash(npx tsc *)",
-      "Bash(npm install *)"
+      "Bash(npm install *)",
+      "Bash(git commit -m ' *)",
+      "Bash(git branch *)",
+      "Bash(git remote *)",
+      "Bash(git push *)",
+      "Bash(git config *)",
+      "Bash(gh auth *)",
+      "PowerShell(cmdkey /list)",
+      "Bash(git checkout *)",
+      "Bash(git add *)"
     ]
   }
 }
