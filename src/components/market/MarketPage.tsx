@@ -34,7 +34,7 @@ export function MarketPage({ onProductDetail }: { onProductDetail?: (id: string)
   });
 
   const kit = mockProducts.find((p) => p.id === "prod-1")!;
-  const newArrivals = mockProducts.filter((p) => p.is_new);
+  const newArrivals = mockProducts.filter((p) => p.is_new && p.id !== "prod-1");
 
   return (
     <div style={{ padding: "20px", paddingBottom: "100px" }}>
@@ -195,7 +195,9 @@ export function MarketPage({ onProductDetail }: { onProductDetail?: (id: string)
           </div>
           <div style={{ display: "flex", gap: "12px", overflowX: "auto", paddingBottom: "12px", marginBottom: "24px" }}>
             {newArrivals.map((product) => (
-              <ProductCard key={product.id} product={product} onDetail={onProductDetail} />
+              <div key={product.id} style={{ minWidth: "160px", flexShrink: 0 }}>
+                <ProductCard product={product} onDetail={onProductDetail} />
+              </div>
             ))}
           </div>
         </>
