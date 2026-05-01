@@ -12,7 +12,10 @@
       "PowerShell(cmdkey /list)",
       "Bash(git checkout *)",
       "Bash(git add *)",
-      "Bash(gh pr create --title 'Smart Green PWA — full component architecture with live features' --body ' *)"
+      "Bash(gh pr create --title 'Smart Green PWA — full component architecture with live features' --body ' *)",
+      "Bash(curl -s http://localhost:8080/)",
+      "Bash(netstat -ano)",
+      "PowerShell(Get-Process -Id 45984 -ErrorAction SilentlyContinue; \\(Get-NetTCPConnection -LocalPort 8080 -ErrorAction SilentlyContinue\\).OwningProcess | ForEach-Object { Get-Process -Id $_ -ErrorAction SilentlyContinue | Select-Object Id, Name, Path })"
     ]
   }
 }
