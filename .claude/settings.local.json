@@ -11,7 +11,8 @@
       "Bash(gh auth *)",
       "PowerShell(cmdkey /list)",
       "Bash(git checkout *)",
-      "Bash(git add *)"
+      "Bash(git add *)",
+      "Bash(gh pr create --title 'Smart Green PWA — full component architecture with live features' --body ' *)"
     ]
   }
 }
